@@ -57,6 +57,15 @@ navLinks[4].textContent = siteContent.nav["nav-item-5"];
 
 navLinks[5].textContent = siteContent.nav["nav-item-6"];
 
+//change nav text color
+for (let i = 0; i < navLinks.length; i++){
+  navLinks[i].style.color = 'green';
+}
+
+//append item
+// let newA = document.createElement('a');
+
+// navLinks.appendChild(newA);
 
 
 //title text
@@ -146,8 +155,6 @@ contactP[2].textContent = siteContent.contact.email;
 const footerP = document.querySelector('footer p');
 
 footerP.textContent = siteContent.footer.copyright;
-
-
 
 
 
