@@ -63,9 +63,22 @@ for (let i = 0; i < navLinks.length; i++){
 }
 
 //append item
-// let newA = document.createElement('a');
+let newA = document.createElement('a');
+let aText = document.createTextNode("Copyright");
+newA.appendChild(aText);
+newA.href = "#";
+document.querySelector('nav').appendChild(newA);
+newA.style.color = 'green';
 
-// navLinks.appendChild(newA);
+
+//prepend item
+let prependA = document.createElement('a');
+let preAText= document.createTextNode("Home");
+prependA.appendChild(preAText);
+prependA.href = "#";
+document.querySelector('nav').prepend(prependA);
+prependA.style.color = 'green';
+
 
 
 //title text
